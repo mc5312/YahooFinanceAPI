@@ -8,7 +8,6 @@ config = dict(dotenv_values(".env"))
 app = FastAPI()
 url = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v3/get-chart"
 
-
 @app.get("/")
 async def root():
     return {"message": "/price/{ticker} for price data"}
